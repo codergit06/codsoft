@@ -1,0 +1,30 @@
+[19:52, 26/5/2024] Anjali😽: import random
+import string
+
+def generate_password(length, complexity):
+    characters = ""
+    if complexity == 1:
+        characters = string.ascii_letters + string.digits
+    elif complexity == 2:
+        characters = string.ascii_letters+"_"+string.digits
+        
+    elif complexity == 3:
+        characters = string.ascii_letters + string.digits + string.punctuation
+        
+    elif complexity == 4:
+        characters = string.ascii_letters + string.digits + string.punctuation + string.whitespace
+    else:
+        raise ValueError("Invalid complexity level. Please choose 1, 2, 3 or 4.")
+    password = ''.join(random.choice(characters) for _ in range(length))
+    return password
+x='n'
+while x=='n':
+    len=int(input("Specify the desired length of the password:"))
+    level=int(input("Choose a complexity level(1/2/3/4):"))
+    print(generate_password(len, level))
+    x=input("Are you satisfied with the program generated password?(y/n):")
+    if x=='n':
+        print("NOT SATISFIED! Lets try another!!")
+if x=='y':
+    print("ThankYou!")
+[19:53, 26/5/2024] Anjali😽: Password generator
