@@ -1,4 +1,4 @@
-[19:52, 26/5/2024] Anjali😽: import random
+import random
 import string
 
 def generate_password(length, complexity):
@@ -27,4 +27,3 @@ while x=='n':
         print("NOT SATISFIED! Lets try another!!")
 if x=='y':
     print("ThankYou!")
-[19:53, 26/5/2024] Anjali😽: Password generator
