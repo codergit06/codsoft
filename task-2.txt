@@ -32,4 +32,4 @@ while x=='y':
         print("Seems like a wrong choice! Would you like to try again?")
     x=input("Would you like to continue using the calculator?(y/n): ")
 if x=='n':
-    print("Thank you! \nRecall me in case you ever get tied up in a difficult calculations!")
+    print("Thank you! \nRecall me in case you ever get tied up in a difficult calculations!!")
